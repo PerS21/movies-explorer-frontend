@@ -1,0 +1,115 @@
+.profile {
+    width: 396px;
+    margin: 74px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 123px;
+}
+
+.profile__form {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__input-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E8E8E8;
+    outline: none;
+    margin-top: 17px;
+}
+
+.profile__input-block:last-of-type {
+    border-bottom: none;
+}
+
+.profile__input-block:first-of-type {
+    margin-top: 0;
+}
+
+.profile__input-text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.profile__input {
+    border: none;
+    display: flex;
+    align-self: flex-end;
+    outline: none;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: right;
+    color: #000000;
+}
+
+.profile__submit {
+    text-decoration: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    margin-top: 220px;
+}
+
+.profile__logout {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #FF3055;
+    text-decoration: none;
+    margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+    .profile__form {
+        width: 260px;
+    }
+}
