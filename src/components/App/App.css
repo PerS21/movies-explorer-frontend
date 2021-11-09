@@ -171,4 +171,15 @@
         padding: 0 0 28px;
         margin-top: 70px;
     }
+
+    .form__text {
+        font-size: 12px;
+        line-height: 15px;
+        margin-right: 7px;
+    }
+
+    .form__link {
+        font-size: 12px;
+        line-height: 15px;
+    }
 }
