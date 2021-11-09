@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Register.css';
-import registerLogo from '../../images/logo.png';
+import registerLogo from '../../images/logo.svg';
 
 
 function Register() {
@@ -72,9 +72,9 @@ function Register() {
                     >
                         Зарегистрироваться
                     </button>
-                    <div className='register__text-block'>
-                        <p className='register__text'>Уже зарегистрированы?</p>
-                        <Link to="/signin" className='register__link clickable'>
+                    <div className='form__text-block'>
+                        <p className='form__text'>Уже зарегистрированы?</p>
+                        <Link to="/signin" className='form__link clickable'>
                             Войти
                         </Link>
                     </div>

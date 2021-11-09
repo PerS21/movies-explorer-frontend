@@ -1,6 +1,6 @@
 import './MoviesCard.css';
 import ddd from "../../images/Animator-Spanch-Bob.jpg";
-import like from "../../images/like.png";
+import like from "../../images/like.svg";
 
 
 function MoviesCard() {

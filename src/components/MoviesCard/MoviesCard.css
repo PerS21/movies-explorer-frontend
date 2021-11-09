@@ -1,5 +1,5 @@
 .moviecard__content {
-    width: 364px;
+    width: 100%;
     height: 281px;
     background: #FDFDFD;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
@@ -8,7 +8,7 @@
 }
 
 .moviecard__img {
-    width: 364px;
+    width: 100%;
     height: 203px;
     object-fit: cover;
 }
@@ -55,12 +55,10 @@
 
 @media (max-width: 1200px) {
     .moviecard__content {
-        width: 339px;
         height: 281px;
     }
 
     .moviecard__img {
-        width: 339px;
         height: 190px;
     }
 }

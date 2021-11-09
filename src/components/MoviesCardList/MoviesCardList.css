@@ -45,4 +45,8 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px 30px;
     }
+
+    .movies__more {
+        width: 240px;
+    }
 }

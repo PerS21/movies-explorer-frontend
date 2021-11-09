@@ -1,4 +1,5 @@
-import headerLogo from '../../images/logo.png';
+import headerLogo from '../../images/logo.svg';
+import burger from '../../images/burger.svg';
 import { Route, Switch, Link } from 'react-router-dom';
 import './Header.css';
 import Navigation from "../Navigation/Navigation";
@@ -28,7 +29,12 @@ function Header() {
                             alt="Лого"
                         />
                     </Link>
-                    <Navigation />
+                    <div className='dect-nav'>
+                        <Navigation />
+                    </div>
+                    <div className='mob-nav'>
+                        <img src={burger} alt="моб меню" />
+                    </div>
                 </header>
             </Route>
         </Switch>

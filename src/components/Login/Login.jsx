@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Login.css';
-import loginLogo from '../../images/logo.png';
+import loginLogo from '../../images/logo.svg';
 
 
 function Login() {
@@ -55,6 +55,12 @@ function Login() {
                 >
                     Войти
                 </button>
+                <div className='form__text-block'>
+                        <p className='form__text'>Ещё не зарегистрированы?</p>
+                        <Link to="/signup" className='form__link clickable'>
+                            Регистрация
+                        </Link>
+                    </div>
             </form>
         </section>
     );

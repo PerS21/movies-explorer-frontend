@@ -1,6 +1,6 @@
 import './SearchForm.css';
 import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
-import serch from '../../images/serch.png';
+import serch from '../../images/serch.svg';
 
 
 function SearchForm() {
