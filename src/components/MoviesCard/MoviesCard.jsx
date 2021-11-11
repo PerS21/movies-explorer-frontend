@@ -1,7 +1,9 @@
 import './MoviesCard.css';
-import ddd from "../../images/Animator-Spanch-Bob.jpg";
+import cardLink from "../../images/Animator-Spanch-Bob.jpg";
+import { Route, Switch } from 'react-router-dom';
 import like from "../../images/like.svg";
-
+import redLike from "../../images/redLike.svg";
+import sCross from "../../images/sCross.svg";
 
 function MoviesCard() {
   return (
@@ -9,7 +11,7 @@ function MoviesCard() {
       <a href='/'>
         <img
           className="moviecard__img"
-          src={ddd}
+          src={cardLink}
           alt='картинка фильма'
         />
       </a>
@@ -18,7 +20,14 @@ function MoviesCard() {
           <h3 className="moviecard__title">Чуть о фильме</h3>
           <p className="moviecard__time">Тайминг фильма</p>
         </div>
-        <img src={like} alt="лайк" className='moviecard__like clickable' />
+        <Switch>
+          <Route exact path="/movies">
+            <img src={redLike} alt="лайк" className='moviecard__like clickable' />
+          </Route>
+          <Route exact path="/saved-movies">
+            <img src={sCross} alt="лайк" className='moviecard__cross clickable' />
+          </Route>
+        </Switch>
       </div>
     </div>
   );

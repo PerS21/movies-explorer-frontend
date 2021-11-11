@@ -49,4 +49,8 @@
     .movies__more {
         width: 240px;
     }
+
+    .movies__cardlist {
+        margin-top: 40px;
+    }
 }

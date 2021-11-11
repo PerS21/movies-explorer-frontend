@@ -60,6 +60,10 @@
         margin-top: 69px;
     }
 
+    .portfolio__list-item {
+        width: 292px;
+    }
+
     .portfolio__list-item-text {
         font-size: 18px;
         line-height: 28px;

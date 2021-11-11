@@ -1,5 +1,6 @@
 import headerLogo from '../../images/logo.svg';
 import burger from '../../images/burger.svg';
+import close from '../../images/close.svg';
 import { Route, Switch, Link } from 'react-router-dom';
 import './Header.css';
 import Navigation from "../Navigation/Navigation";
@@ -33,8 +34,18 @@ function Header() {
                         <Navigation />
                     </div>
                     <div className='mob-nav'>
-                        <img src={burger} alt="моб меню" />
+                        <div className='mob-nav__conteiner'>
+                            <div className='mob-nav__button-cont'>
+                                <button className='mob-nav__button clickable'>
+                                    <img src={close} alt="моб меню" />
+                                </button>
+                            </div>
+                            <Navigation />
+                        </div>
                     </div>
+                    <button className='mob-nav__button mob-nav__open-button clickable'>
+                        <img src={burger} alt="моб меню" />
+                    </button>
                 </header>
             </Route>
         </Switch>

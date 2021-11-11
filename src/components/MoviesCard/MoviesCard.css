@@ -53,6 +53,16 @@
     color: #A0A0A0;
 }
 
+.moviecard__cross{
+    visibility: hidden;
+    width: 14px;
+    height: 12px;
+}
+
+.moviecard__info:hover .moviecard__cross{
+    visibility: visible;
+}
+
 @media (max-width: 1200px) {
     .moviecard__content {
         height: 281px;

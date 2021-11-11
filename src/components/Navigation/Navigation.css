@@ -51,5 +51,37 @@
     text-decoration: none;
     width: 100px;
     height: 32px;
-    justify-content:center;
+    justify-content: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .mobile {
+        display: flex;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .navigation__links {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .navigation__li {
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
+
+    .navigation__li:last-of-type {
+        margin-bottom: 0;
+    }
+
 }

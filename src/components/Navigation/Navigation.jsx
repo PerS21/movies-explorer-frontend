@@ -3,11 +3,19 @@ import { NavLink } from "react-router-dom";
 
 import "./Navigation.css";
 
-export default function Navigation({ loggedIn }) {
+export default function Navigation() {
     return (
         <>
             <nav className="navigation">
                 <div className="navigation__links">
+                    <li className='navigation__li mobile'>
+                        <NavLink
+                            to="/"
+                            className="navigation__link clickable"
+                        >
+                            Главная
+                        </NavLink>
+                    </li>
                     <li className='navigation__li'>
                         <NavLink
                             to="/movies"
