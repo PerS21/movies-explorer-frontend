@@ -1,0 +1,117 @@
+.aboutProject__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.aboutProject__list {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+.list__element {
+    margin-top: 70px;
+}
+
+.element__title {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.element__text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 26px auto 110px;
+}
+
+.projectBlock {
+    height: 36px;
+    padding: 9px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.aboutProject__blocks {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 4fr;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.projectBlock__type {
+    padding: 0;
+    margin: 14px auto 110px;
+    color: #A0A0A0;
+}
+
+.projectBlock__week_color_green {
+    background: #2be080;
+}
+
+.projectBlock__week_color_gray {
+    background: #F2F2F2;
+}
+
+@media (max-width: 700px) {
+    .aboutProject__list {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .element__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .element__text {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 16px auto 0;
+    }
+
+    .list__element {
+        margin-top: 56px;
+    }
+
+    .list__element:first-of-type {
+        margin-top: 60px;
+    }
+
+    .aboutProject__blocks {
+        grid-template-columns: 1fr 4fr;
+        box-sizing: border-box;
+    }
+
+    .projectBlock {
+        font-size: 11px;
+        line-height: 13px;
+        padding: 11px 0;
+    }
+
+    .projectBlock__type {
+        margin: 10px auto 93px;
+    }
+}
