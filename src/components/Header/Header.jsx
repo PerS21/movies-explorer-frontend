@@ -1,3 +1,4 @@
+import React from "react";
 import headerLogo from '../../images/logo.svg';
 import burger from '../../images/burger.svg';
 import close from '../../images/close.svg';
@@ -6,6 +7,15 @@ import './Header.css';
 import Navigation from "../Navigation/Navigation";
 
 function Header() {
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    function mobNavOpenTogle(a){
+        console.log(11)
+        setIsOpen(!isOpen)
+    }
+
+    const openClass = isOpen? 'mob-nav__open' : '';
+
     return (
         <Switch>
             <Route exact path="/">
@@ -33,9 +43,9 @@ function Header() {
                     <div className='dect-nav'>
                         <Navigation />
                     </div>
-                    <div className='mob-nav'>
+                    <div className={`mob-nav ${openClass}`}>
                         <div className='mob-nav__conteiner'>
-                            <div className='mob-nav__button-cont'>
+                            <div className='mob-nav__button-cont' onClick={mobNavOpenTogle}>
                                 <button className='mob-nav__button clickable'>
                                     <img src={close} alt="моб меню" />
                                 </button>
@@ -43,7 +53,7 @@ function Header() {
                             <Navigation />
                         </div>
                     </div>
-                    <button className='mob-nav__button mob-nav__open-button clickable'>
+                    <button className='mob-nav__button mob-nav__open-button clickable' onClick={mobNavOpenTogle}>
                         <img src={burger} alt="моб меню" />
                     </button>
                 </header>

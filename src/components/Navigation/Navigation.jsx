@@ -12,6 +12,7 @@ export default function Navigation() {
                         <NavLink
                             to="/"
                             className="navigation__link clickable"
+                            activeClassName="menu__link_active"
                         >
                             Главная
                         </NavLink>
@@ -20,6 +21,7 @@ export default function Navigation() {
                         <NavLink
                             to="/movies"
                             className="navigation__link clickable"
+                            activeClassName="menu__link_active"
                         >
                             Фильмы
                         </NavLink>
@@ -28,12 +30,16 @@ export default function Navigation() {
                         <NavLink
                             to="/saved-movies"
                             className="navigation__link clickable"
+                            activeClassName="menu__link_active"
                         >
                             Сохраненные фильмы
                         </NavLink>
                     </li>
                 </div>
-                <NavLink to="/profile" className="navigation__button">
+                <NavLink
+                    to="/profile"
+                    className="navigation__button"
+                    activeClassName="menu__link_active">
                     Аккаунт
                 </NavLink>
             </nav>
