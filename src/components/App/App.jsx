@@ -202,6 +202,7 @@ function App() {
 
   function handleSignOut() {
     localStorage.clear();
+    setLoggedIn(false)
     history.push("/");
   }
 
@@ -310,7 +311,7 @@ function App() {
     <div className="App">
       <CurrentUserContext.Provider value={currentUser}>
         <div className="page__container">
-          <Header />
+          <Header loggedIn={loggedIn}/>
           <Switch>
             <ProtectedRoute
               path="/movies"

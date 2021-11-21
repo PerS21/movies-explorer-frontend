@@ -10,7 +10,7 @@ export default function Navigation() {
                 <div className="navigation__links">
                     <li className='navigation__li mobile'>
                         <NavLink
-                            to="/"
+                            exact to="/"
                             className="navigation__link clickable"
                             activeClassName="menu__link_active"
                         >
@@ -38,8 +38,7 @@ export default function Navigation() {
                 </div>
                 <NavLink
                     to="/profile"
-                    className="navigation__button"
-                    activeClassName="menu__link_active">
+                    className="navigation__button">
                     Аккаунт
                 </NavLink>
             </nav>
