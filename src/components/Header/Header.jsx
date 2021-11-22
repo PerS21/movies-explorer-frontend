@@ -10,7 +10,6 @@ function Header({ loggedIn }) {
     const [isOpen, setIsOpen] = React.useState(false);
 
     function mobNavOpenTogle(a) {
-        console.log(11)
         setIsOpen(!isOpen)
     }
 

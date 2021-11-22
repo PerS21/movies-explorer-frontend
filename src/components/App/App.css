@@ -89,7 +89,7 @@
     box-sizing: border-box;
 }
 
-.login__input-error{
+.form__input-error {
     color: red;
 }
 
@@ -112,9 +112,14 @@
     border-radius: 3px;
     background: #3456F3;
     padding: 14px 0;
-    margin-bottom: 16px;
     cursor: pointer;
     border: none;
+}
+
+.form-btn_disabled {
+    background-color: #f8f8f8;
+    color: #c2c2c2;
+    pointer-events: none;
 }
 
 .auth__form {
@@ -122,6 +127,7 @@
 }
 
 .form__text-block {
+    margin-top: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;

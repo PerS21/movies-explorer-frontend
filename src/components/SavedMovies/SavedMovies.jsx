@@ -2,10 +2,10 @@ import React from "react";
 import './SavedMovies.css';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import { CurrentUserContext } from "./../../contexts/CurrentUserContext";
 
 function SavedMovies({
     message,
-    savedMovies,
     searchSavedMovie,
     onDeleteMovie,
     isLoading,
@@ -14,7 +14,14 @@ function SavedMovies({
 }) {
     const [shortMovies, setShortMovies] = React.useState([]);
     const [isChecked, setIsChecked] = React.useState(false);
-    let movies = foundSavedMovies.length > 0 ? foundSavedMovies : savedMovies;
+    const currentUser = React.useContext(CurrentUserContext);
+
+    function usersMovies(val){
+        return val.owner === currentUser._id;
+    }
+
+    let movies = foundSavedMovies.length > 0 ? foundSavedMovies.filter(usersMovies) : [];
+
     if (message) {
         movies = [];
     }
@@ -23,7 +30,7 @@ function SavedMovies({
         if (isChecked && !message) {
             setShortMovies(sortShortMovies(movies));
         }
-    }, [isChecked, movies]);
+    }, [isChecked]);
 
     return (
         <section className="movies">

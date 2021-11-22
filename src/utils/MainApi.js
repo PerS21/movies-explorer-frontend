@@ -65,6 +65,8 @@ class MainApi {
       headers: {
         'authorization': token,
         'Content-Type': 'application/json; charset=utf-8',
+        'Cache-Control': 'no-cache',
+        'Expires': '-1',
       },
       credentials: "include",
     }).then(this._checkResponse);

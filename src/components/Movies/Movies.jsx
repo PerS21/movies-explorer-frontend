@@ -2,6 +2,7 @@ import React from "react";
 import './Movies.css';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import { CurrentUserContext } from "./../../contexts/CurrentUserContext";
 
 function Movies({
     movies,
@@ -15,6 +16,13 @@ function Movies({
 }) {
     const [shortMovies, setShortMovies] = React.useState([]);
     const [isChecked, setIsChecked] = React.useState(false);
+    const currentUser = React.useContext(CurrentUserContext);
+
+    function usersMovies(val){
+        return val.owner === currentUser._id;
+    }
+
+    savedMovies = savedMovies.length > 0 ? savedMovies.filter(usersMovies) : [];
 
     React.useEffect(() => {
         if (isChecked) {

@@ -28,24 +28,26 @@ function MoviesCard(props) {
 
   return (
     <div className="moviecard moviecard__content">
-      <a href={props.card.trailerLink} target="_blank" rel='noreferrer'>
         <Switch>
           <Route exact path="/movies">
+          <a href={props.card.trailerLink} target="_blank" rel='noreferrer'>
             <img
               className="moviecard__img"
               src={`${MOVIES_IMAGE_BASE_URL}${props.card.image.url}`}
               alt='картинка фильма'
             />
+            </a>
           </Route>
           <Route exact path="/saved-movies">
+          <a href={props.card.trailer} target="_blank" rel='noreferrer'>
             <img
               className="moviecard__img"
               src={props.card.image}
               alt='картинка фильма'
             />
+            </a>
           </Route>
         </Switch>
-      </a>
       <div className='moviecard__info'>
         <div className="moviecard__block">
           <h3 className="moviecard__title">{props.card.nameRU}</h3>

@@ -85,6 +85,11 @@
     background: none;
 }
 
+.profile__submit-disabled {
+    color: #c2c2c2;
+    pointer-events: none;
+}
+
 .profile__logout {
     font-family: Inter;
     font-style: normal;
