@@ -58,6 +58,10 @@
     display: none;
 }
 
+.menu__link_active{
+    border-bottom: 2px solid #000;
+}
+
 @media (max-width: 900px) {
     .mobile {
         display: flex;
